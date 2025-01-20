@@ -175,3 +175,6 @@ logs/
 
 data/wn/wn.db
 huggingface/hub/version.txt
+garak/resources/plugin_cache.json
+resources/plugin_cache.json
+
