@@ -168,3 +168,10 @@ hitlog.*.jsonl
 garak_runs/
 runs/
 logs/
+
+# windsurf rules
+.windsurfrules
+
+
+data/wn/wn.db
+huggingface/hub/version.txt
