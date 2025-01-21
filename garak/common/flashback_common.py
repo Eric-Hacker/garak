@@ -4,9 +4,13 @@
 """Common parameters and utilities for flashback probe and generator"""
 
 import json
+import logging
 from pathlib import Path
 
 from garak import _config
+
+
+#logger = logging.getLogger(__name__)
 
 def read_reports(report_prefix: str) -> list[dict]:
     """Read and parse report files based on prefix or default name"""
@@ -31,4 +35,5 @@ def read_reports(report_prefix: str) -> list[dict]:
                     reports.append(report)
                 except json.JSONDecodeError:
                     continue
+        logging.debug("read_reports length: %s", len(reports))
     return reports
